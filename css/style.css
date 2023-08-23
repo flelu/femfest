@@ -1,0 +1,202 @@
+:root{
+	--bg-color: #fff963;
+	--text-color: #000000;
+	--main-color: #000000;
+}
+
+body{
+	min-height: 100vh;
+	background: var(--bg-color);
+	color: var(--text-color);
+}
+.navbar {
+	overflow: hidden;
+	background-color: #fff969;
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100vw;
+	min-height: 120px;
+	display: flex;
+	justify-content: center;
+	border-bottom: thick;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	box-shadow: 10px 10px 16px 10px rgba(0,0,0,0.2)
+}
+
+.navbar button {
+	float: left;
+	display: block;
+	text-align: center;
+}
+
+button {
+	border: none;
+	cursor: pointer;
+	appearance: none;
+	background-color: inherit;
+	transition: transform .5s ease;
+}
+button:hover{
+	transform: rotate(5deg);
+
+}
+.homeButton{
+	margin-left: 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 20px;
+	border: none;
+	cursor: pointer;
+	appearance: none;
+	background-color: inherit;
+	transition: transform .7s ease-in-out;
+}
+.homeButton:hover{
+	transform: rotate(-360deg);
+}
+img {
+	width:8vw;
+	height:8vw;
+	min-height: 85px;
+	min-width: 85px;
+}
+.bandimg{
+	display: block;
+	width:600px;
+	height:600px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.text1 {
+	margin-top: 190px;
+}
+.text2 {
+	margin-top: 40px;
+}
+h1 {
+	text-align: center;
+	font-family: Afronaut Test;
+}
+
+p {
+	margin-right: 15vw;
+	margin-left: 15vw;
+	text-align: center;
+	font-family: Neuzeit Grotesk Cond W03 Black;
+}
+
+@font-face {
+    font-family: "Afronaut Test";
+    src: url("https://db.onlinewebfonts.com/t/394229ca150a1d154b9520c925a724b7.eot");
+    src: url("https://db.onlinewebfonts.com/t/394229ca150a1d154b9520c925a724b7.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/394229ca150a1d154b9520c925a724b7.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/394229ca150a1d154b9520c925a724b7.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/394229ca150a1d154b9520c925a724b7.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/394229ca150a1d154b9520c925a724b7.svg#Afronaut Test")format("svg");
+}
+
+@font-face {
+    font-family: "Neuzeit Grotesk Cond W03 Black";
+    src: url("https://db.onlinewebfonts.com/t/d86aa14b4ac846cc2ed18147f353cfa3.eot");
+    src: url("https://db.onlinewebfonts.com/t/d86aa14b4ac846cc2ed18147f353cfa3.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/d86aa14b4ac846cc2ed18147f353cfa3.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/d86aa14b4ac846cc2ed18147f353cfa3.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/d86aa14b4ac846cc2ed18147f353cfa3.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/d86aa14b4ac846cc2ed18147f353cfa3.svg#Neuzeit Grotesk Cond W03 Black")format("svg");
+}
+
+html {
+	scroll-behavior: smooth;
+	scroll-padding: 12.5rem;
+	scrollbar-width: thin;
+	scrollbar-color: #e8b3eF #96f2cF 
+}
+
+.bottom {
+	overflow: hidden;
+	background-color: #96f2cFAA ;
+	position: flex;
+	bottom:0;
+	right: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.bottomImage {
+	width: 17vw;
+	height: 6vw;
+	margin-left: 1vw;
+	margin-right: 1vw;
+}
+.bottomImage2 {
+	width: 11vw;
+	height: 6vw;
+}
+.bottomImage3{
+	width: 7vw;
+	height: 6vw;
+}
+.smallStar{
+    margin-top: 5vw;
+	width: 3vw;
+	height: 3vw;
+	min-height: 55px;
+	min-width: 55px;
+}
+
+.accordion{
+	margin-right: 20vw;
+	margin-left: 20vw;
+}
+
+.accordion li{
+	list-style: none;
+	padding: 10px;
+	margin-top: 15px;
+	margin-bottom: 5px;
+	border-radius: 33px;
+	background: #96f2cF ;
+	box-shadow: 3px 3px 7px 0px rgba(232, 179, 239, 1);
+}
+.accordion li:hover{
+}
+
+.accordion li label{
+	font-family: Afronaut Test;
+	diplay: flex;
+	align-items: center;
+	margin-left: 15vw;
+	font-size: 22px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+label::before{
+	margin-right: 10px;
+	font-size: 21px;
+	font-weight: 600;
+}
+
+input[type="radio"]{
+	display: none;
+}
+
+.accordion .content{
+	text-align: center;
+	font-family: Neuzeit Grotesk Cond W03 Black;
+	padding: 0 10px;
+	line-height: 24px;
+	max-height: 0;
+	overflow: hidden;
+	transition: .7s;
+}
+
+.accordion input[type="radio"]:checked + label + .content{
+	max-height: 400px;
+	padding: 10px 10px 20px;
+}
