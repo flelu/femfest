@@ -187,7 +187,7 @@ input[type="radio"]{
 }
 
 .accordion .content{
-	text-align: center;
+	text-align: left;
 	font-family: Neuzeit Grotesk Cond W03 Black;
 	padding: 0 10px;
 	line-height: 24px;
@@ -197,6 +197,6 @@ input[type="radio"]{
 }
 
 .accordion input[type="radio"]:checked + label + .content{
-	max-height: 400px;
+	max-height: 2000px;
 	padding: 10px 10px 20px;
 }
