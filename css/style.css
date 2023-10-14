@@ -81,7 +81,11 @@ h1 {
 	text-align: center;
 	font-family: Afronaut Test;
 }
-
+h2 {
+	text-align: center;
+	font-family: Afronaut Test;
+	font-size: 22px;
+}
 p {
 	margin-right: 15vw;
 	margin-left: 15vw;
@@ -112,6 +116,7 @@ p {
 html {
 	scroll-behavior: smooth;
 	scroll-padding: 12.5rem;
+	/*scroll-padding: 22vw;*/
 	scrollbar-width: thin;
 	scrollbar-color: #e8b3eF #96f2cF 
 }
@@ -200,3 +205,31 @@ input[type="radio"]{
 	max-height: 2000px;
 	padding: 10px 10px 20px;
 }
+
+table {
+
+	border: 3px outset #e8b3eF;
+	border-radius: 12px;
+}
+.tablepos {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.data{
+	font-family: Neuzeit Grotesk Cond W03 Black;
+	font-size: 14px;
+}
+
+.freitag {
+	background-color: #e8b3eF;
+}
+
+.samstag{
+	background-color: #fff969;
+}
+
+.sonntag {
+	background-color: #96f2cF;
+}
+
